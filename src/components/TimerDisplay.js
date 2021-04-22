@@ -32,8 +32,11 @@ const TimerDisplay = (props) => {
         return min + ':' + sec;
     }
 
+    const width = 250-(250-(time*250)/props.time);
+
     return (
         <div className = "timer-wrapper flex">
+            <div className = "timer-line" style = {{width: width +'px'}}></div>
             <div className = "timer-display">
                 <div className = "output-data flex">
                     <p>Step: <span>{props.step/1000}s</span></p>

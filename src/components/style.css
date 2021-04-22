@@ -12,6 +12,12 @@
     font-size: 18px;
 }
 
+.timer-line {
+    height: 3px;
+    transition: width .3s linear;
+    background-color: cyan;
+}
+
 .timer-display {
     width: 250px;
     height: 100px;
